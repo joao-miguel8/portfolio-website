@@ -3,14 +3,15 @@ import './App.css'
 import Header from "./components/Header"
 import NavBar from './components/Navbar'
 import About from './components/About'
+import Skills from './components/Skills'
 
 function App() {
   const [activeNavLink, setActiveNavLink] = useState("about");
-
+  
 const navLinks = {
   about: <About />,
   work: "Work",
-  skills: "skills",
+  skills: <Skills />,
   contact: "contact"
 }
 
