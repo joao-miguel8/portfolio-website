@@ -2,32 +2,30 @@ import { useState } from "react"
 import classNames from "classnames";
 import '../App.css'
 
-const NavBar = () => {
-const [activeNavLink, setActiveNavLink] = useState(null);
+const NavBar = ({ activeNavLink, setActiveNavLink, navLinks}) => {
 
-const handleActiveNavLink = (e) => {
+
+const handleActiveNavLink = (e, link) => {
   e.preventDefault();
-setActiveNavLink(e.target.textContent);
+  setActiveNavLink(link);
 }
 
-const navLinks = [
-  {key: "about" ,label: "ABOUT"},
-  {key: "work" ,label: "WORK"},
-  {key: "skills" ,label: "SKILLS"},
-  {key: "contact" ,label: "CONTACT"},
-]
 
   return (
   <nav>
-      <ul onClick={handleActiveNavLink} className="px-2 flex flex-wrap gap-3 robotoMono">
-        {navLinks.map((link) => { return (
-          <li key={link.key} >
-            <a href={link.key} className={classNames(" text-18 font-light dark:text-white",
-            { "text-[#1A96C6] dark:text-[#1A96C6]": activeNavLink === link.label} )}>{link.label}
+      <ul className="flex flex-wrap gap-3 robotoMono">
+        {Object.entries(navLinks).map(([link]) => {
+          const capitalizeLinks = link.toUpperCase()
+          return (
+          <li onClick={(e) => handleActiveNavLink(e,link)} key={link} >
+            <a href={link} className={classNames(" text-18 font-light",
+            { "text-[#1A96C6] dark:text-[#1A96C6]": activeNavLink === link,  "dark:text-white": activeNavLink !== link} )}>{capitalizeLinks}
             </a>
           </li>
-        )})}
+        )
+        })}
     </ul>
+
   </nav>
   )
 }
