@@ -1,33 +1,30 @@
-import { useState } from "react"
 import classNames from "classnames";
-import '../App.css'
+import "../App.css";
+import { Link, useLocation } from "react-router-dom";
 
-const NavBar = ({ activeNavLink, setActiveNavLink, navLinks}) => {
+const NavBar = () => {
+	const location = useLocation();
 
+	const navLinks = [
+		{ to: "/about", name: "About" },
+		{ to: "/skills", name: "Skills" },
+		{ to: "/works", name: "Works" },
+		{ to: "/contact", name: "Contact" },
+	];
 
-const handleActiveNavLink = (e, link) => {
-  e.preventDefault();
-  setActiveNavLink(link);
-}
+	return (
+		<nav className="my-4 flex flex-wrap gap-3">
+			{navLinks.map(navLink => {
+				return (
+					<ul>
+						<Link to={navLink.to} className={classNames("text-18 text-dark font-bold dark:text-white robotoMono", location.pathname === navLink.to ? "text-[#1A96C6] dark:text-[#1cafe9]" : "")}>
+							<li key={navLink.to}>{navLink.name}</li>
+						</Link>
+					</ul>
+				);
+			})}
+		</nav>
+	);
+};
 
-
-  return (
-  <nav>
-      <ul className="flex flex-wrap gap-3 robotoMono">
-        {Object.entries(navLinks).map(([link]) => {
-          const capitalizeLinks = link.toUpperCase()
-          return (
-          <li onClick={(e) => handleActiveNavLink(e,link)} key={link} >
-            <a href={link} className={classNames(" text-18 font-light",
-            { "text-[#1A96C6] dark:text-[#1A96C6]": activeNavLink === link,  "dark:text-white": activeNavLink !== link} )}>{capitalizeLinks}
-            </a>
-          </li>
-        )
-        })}
-    </ul>
-
-  </nav>
-  )
-}
-
-export default NavBar
+export default NavBar;
