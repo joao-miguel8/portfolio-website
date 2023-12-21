@@ -30,25 +30,27 @@ const Skills = () => {
 	};
 
 	return (
-		<section>
+		<>
 			<BGPattern />
-			<Header />
-			<div className="mx-4">
-				<NavBar />
-				<div className="mt-6">
-					<p className="text-black dark:text-white font-regular montserrat">Here is a list of all my skills, this list is steadily growing over time.</p>
-					<motion.ul variants={variants} initial="hidden" animate="show" className="mt-4 flex flex-col gap-2">
-						{skills.map((skill, i) => {
-							return (
-								<motion.li variants={item} key={i} className="text-20 text-[#1783ae] dark:text-[#20b6f1] robotoMono">
-									{skill}
-								</motion.li>
-							);
-						})}
-					</motion.ul>
+			<section className="mb-4 pt-10 mx-auto w-full lg:w-[60rem] h-full">
+				<Header />
+				<div className="mx-4">
+					<NavBar />
+					<div className="mt-6">
+						<p className="text-black dark:text-white font-regular montserrat">Here is a list of all my skills, this list is steadily growing over time.</p>
+						<motion.ul variants={variants} initial="hidden" animate="show" className="mt-4 flex flex-col gap-2">
+							{skills.map((skill, i) => {
+								return (
+									<motion.li variants={item} key={i} className="text-20 text-[#1783ae] dark:text-[#20b6f1] robotoMono">
+										{skill}
+									</motion.li>
+								);
+							})}
+						</motion.ul>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</>
 	);
 };
 
