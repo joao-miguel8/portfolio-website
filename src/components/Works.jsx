@@ -64,7 +64,7 @@ const Work = () => {
 											</div>
 											<div className="mt-8 flex gap-4 flex-wrap">
 												<a
-													href={project.githubLink}
+													href=""
 													target="_blank"
 													className={`font-bold text-[14px] text-[#fff] bg-[#43baea] px-[22px] py-[6px] border-[solid] border-[#43baea] border-[2px] [box-shadow:rgb(0,_0,_0)_0px_0px_0px_0px] rounded-[50px] [transition:621ms] translate-y-[0] flex flex-row items-center cursor-pointer hover:[transition:800ms] hover:-translate-y-0 hover:bg-[#fff] hover:text-[#43baea] hover:border-[solid] hover:border-[2px] hover:border-[#43baea] montserrat ${
 														project.name === "Portfolio" && "hidden"
@@ -72,7 +72,8 @@ const Work = () => {
 													View live demo
 												</a>
 												<a
-													href="#"
+													href={project.githubLink}
+													target="_blank"
 													className="px-4 py-2 text-[14px] font-bold border border-black dark:border-white hover:bg-black hover:text-white dark:hover:text-white dark:hover:border-black hover:dark:text-white dark:text-white
 												transition ease-in-out duration-500 [box-shadow:0_4px_30px_rgba(0,_0,_0,_0.1)] backdrop-filter backdrop-blur-[8.1px] border-[solid] montserrat">
 													View Code
