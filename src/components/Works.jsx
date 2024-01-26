@@ -4,43 +4,80 @@ import Header from "./Header";
 import BGPattern from "./BGPattern";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+
 import discordGIF from "../assets/giphy-discord-landing-page.gif";
-import underConstructionIMG from "../assets/under-construction-img.jpg";
+import wellingtonLimousineGIF from "../assets/wellington-limousine-gif.gif";
+import LegendOfZeldaGIF from "../assets/loz-breath-of-the-wild-gif.gif";
+import cineEquipGIF from "../assets/cine-equip-gif.gif";
+import instaCartGIF from "../assets/instacart-gif.gif";
 
 const Work = () => {
 	const projects = [
 		{
 			name: "CineEquip",
-			summary: "Full-stack software application using MERN (MongoDB, Express.js, React.js, Node.js + Typescript) designed to address the organizational needs of professionals in the film industry, offering a solution to enhance the management of project gear.",
+			summary: "Full-stack software application using MERN (MongoDB, Express.js, React.js, Node.js + Typescript) designed to address the organizational needs of professionals in the film industry, a solution to the management of project equipment.",
 			techUsed: ["React", "Tailwind", "Zustand", "Express", "Mongoose"],
 			githubLink: "https://github.com/joao-miguel8/cineEquip",
-			img: underConstructionIMG,
+			liveDemoLink: "ww",
+			img: cineEquipGIF,
 		},
-		{ name: "Portfolio", summary: "my portfolio website showcasing my current skills and my collection of portfolio projects I have worked on.", techUsed: ["React", "Tailwind"], githubLink: "https://github.com/joao-miguel8/portfolio-website", img: "" },
+		{
+			name: "Wellington Limousine",
+			summary: "A local freelance client project showcasing their services, benefits and an email submission form to retain potential clients.",
+			techUsed: ["React", "Tailwind"],
+			githubLink: "https://github.com/joao-miguel8/wellington-limousine",
+			liveDemoLink: "",
+			img: wellingtonLimousineGIF,
+		},
 
 		{
+			name: "Instacart Landing Page",
+			summary: "A landing page design challenge focusing specifically on copying an existing design with similar frontend functionality of the original.",
+			techUsed: ["React", "TypeScript", "CSS"],
+			githubLink: "https://github.com/joao-miguel8/instacart.com-design-challenge",
+			liveDemoLink: "",
+			img: instaCartGIF,
+		},
+		{
+			name: "Breath of the wild Website",
+			summary: "A compendium showcasing materials,creatures and treasures in The Breath of the Wild video game.",
+			techUsed: ["React", "TypeScript", "Tailwind"],
+			githubLink: "https://github.com/joao-miguel8/breath-of-the-wild-companion-app",
+			liveDemoLink: "https://breath-of-the-wild-companion-app.pages.dev/",
+			img: LegendOfZeldaGIF,
+		},
+		{
 			name: "Discord Landing Page",
-			summary: "A no framework landing page showcasing animated transitions and responsive design principles",
-			techUsed: ["HTML", "CSS", "Javascript"],
+			summary: "A no framework landing page showcasing frontend skills like animated transitions and responsive design principles.",
+			techUsed: ["HTML", "Javascript", "CSS"],
 			githubLink: "https://github.com/joao-miguel8/discord-landing-page",
+			liveDemoLink: "https://main--fancy-pithivier-ee4b22.netlify.app/",
 			img: discordGIF,
+		},
+		{
+			name: "Portfolio website",
+			summary: "My portfolio website showcasing my current skills and my collection of portfolio projects I have worked on.",
+			techUsed: ["React", "Tailwind"],
+			githubLink: "https://github.com/joao-miguel8/portfolio-website",
+			liveDemoLink: "",
+			img: "",
 		},
 	];
 
 	return (
 		<>
 			<BGPattern />
-			<section className="mb-4 pt-10 mx-auto w-full lg:w-[60rem] h-full">
+			<section className="mb-4 pt-10 mx-auto px-4 w-full lg:w-[60rem] h-full">
 				<Header />
 				<div>
 					<Navbar />
 					<motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
 						<Swiper
 							className="w-full mt-10 h-full"
-							modules={[Pagination]}
+							modules={[Pagination, Autoplay]}
 							pagination={{
 								clickable: true,
 							}}
@@ -52,7 +89,7 @@ const Work = () => {
 											<h1 className="text-34 dark:text-white montserrat">{project.name}</h1>
 											<p className="mt-10 w-full md:w-[40rem] text-20 dark:text-white montserrat">{project.summary}</p>
 											<div className="mt-10 flex items-center flex-wrap gap-2 text-bold dark:text-white">
-												<h4 className="text-16  montserrat ">Skills Used:</h4>
+												<h4 className="text-16 montserrat ">Skills Used:</h4>
 												{project.techUsed.map((tech, index) => {
 													return (
 														<>
@@ -62,15 +99,18 @@ const Work = () => {
 													);
 												})}
 											</div>
+											{/* view live demo / view code button */}
 											<div className="mt-8 flex gap-4 flex-wrap">
+												{/* view live demo button */}
 												<a
-													href=""
+													href={project.liveDemoLink}
 													target="_blank"
 													className={`font-bold text-[14px] text-[#fff] bg-[#43baea] px-[22px] py-[6px] border-[solid] border-[#43baea] border-[2px] [box-shadow:rgb(0,_0,_0)_0px_0px_0px_0px] rounded-[50px] [transition:621ms] translate-y-[0] flex flex-row items-center cursor-pointer hover:[transition:800ms] hover:-translate-y-0 hover:bg-[#fff] hover:text-[#43baea] hover:border-[solid] hover:border-[2px] hover:border-[#43baea] montserrat ${
 														project.name === "Portfolio" && "hidden"
 													}`}>
 													View live demo
 												</a>
+												{/* view code button */}
 												<a
 													href={project.githubLink}
 													target="_blank"
@@ -79,7 +119,7 @@ const Work = () => {
 													View Code
 												</a>
 											</div>
-											<img src={project.img} alt={`${project.name} image`} className=" mt-4 w-[400px] border-2 h-60" />
+											<img src={project.img} alt={`${project.name} image`} className=" mt-4 w-[400px] h-60" />
 										</SwiperSlide>
 									);
 								})}
