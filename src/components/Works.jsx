@@ -114,7 +114,7 @@ const Work = () => {
 												<a
 													href={project.githubLink}
 													target="_blank"
-													className="px-4 py-2 text-[14px] font-bold border border-black dark:border-white hover:bg-black hover:text-white dark:hover:text-white dark:hover:border-black hover:dark:text-white dark:text-white
+													className="px-4 py-2 text-[14px] font-bold border rounded-full border-black dark:border-white hover:bg-black hover:text-white dark:hover:text-white dark:hover:border-black hover:dark:text-white dark:text-white
 												transition ease-in-out duration-500 [box-shadow:0_4px_30px_rgba(0,_0,_0,_0.1)] backdrop-filter backdrop-blur-[8.1px] border-[solid] montserrat">
 													View Code
 												</a>
