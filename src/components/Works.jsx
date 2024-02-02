@@ -29,7 +29,7 @@ const Work = () => {
 			summary: "A local freelance client project showcasing their services, benefits and an email submission form to retain potential clients.",
 			techUsed: ["TypeScript", "React", "Tailwind"],
 			githubLink: "https://github.com/joao-miguel8/wellington-limousine",
-			liveDemoLink: "",
+			liveDemoLink: "https://wellington-limousine.pages.dev/",
 			img: wellingtonLimousineGIF,
 		},
 		{
@@ -37,7 +37,7 @@ const Work = () => {
 			summary: "Full-stack software application using MERN (MongoDB, Express.js, React.js, Node.js + Typescript) designed to address the organizational needs of professionals in the film industry, a solution to the management of project equipment.",
 			techUsed: ["React", "Tailwind", "Zustand", "Express", "Mongoose"],
 			githubLink: "https://github.com/joao-miguel8/cineEquip",
-			liveDemoLink: "ww",
+			liveDemoLink: "",
 			img: cineEquipGIF,
 		},
 		{
@@ -45,7 +45,7 @@ const Work = () => {
 			summary: "A landing page design challenge focusing specifically on copying an existing design with similar frontend functionality of the original.",
 			techUsed: ["React", "TypeScript", "CSS"],
 			githubLink: "https://github.com/joao-miguel8/instacart.com-design-challenge",
-			liveDemoLink: "",
+			liveDemoLink: "https://instacart-com-design-challenge.pages.dev/",
 			img: instaCartGIF,
 		},
 		{
