@@ -17,6 +17,22 @@ import instaCartGIF from "../assets/instacart-gif.gif";
 const Work = () => {
 	const projects = [
 		{
+			name: "Breath of the wild Website",
+			summary: "A compendium showcasing materials,creatures and treasures in The Breath of the Wild video game.",
+			techUsed: ["React", "TypeScript", "Tailwind"],
+			githubLink: "https://github.com/joao-miguel8/breath-of-the-wild-companion-app",
+			liveDemoLink: "https://breath-of-the-wild-companion-app.pages.dev/",
+			img: LegendOfZeldaGIF,
+		},
+		{
+			name: "Wellington Limousine",
+			summary: "A local freelance client project showcasing their services, benefits and an email submission form to retain potential clients.",
+			techUsed: ["TypeScript", "React", "Tailwind"],
+			githubLink: "https://github.com/joao-miguel8/wellington-limousine",
+			liveDemoLink: "",
+			img: wellingtonLimousineGIF,
+		},
+		{
 			name: "CineEquip",
 			summary: "Full-stack software application using MERN (MongoDB, Express.js, React.js, Node.js + Typescript) designed to address the organizational needs of professionals in the film industry, a solution to the management of project equipment.",
 			techUsed: ["React", "Tailwind", "Zustand", "Express", "Mongoose"],
@@ -24,15 +40,6 @@ const Work = () => {
 			liveDemoLink: "ww",
 			img: cineEquipGIF,
 		},
-		{
-			name: "Wellington Limousine",
-			summary: "A local freelance client project showcasing their services, benefits and an email submission form to retain potential clients.",
-			techUsed: ["React", "Tailwind"],
-			githubLink: "https://github.com/joao-miguel8/wellington-limousine",
-			liveDemoLink: "",
-			img: wellingtonLimousineGIF,
-		},
-
 		{
 			name: "Instacart Landing Page",
 			summary: "A landing page design challenge focusing specifically on copying an existing design with similar frontend functionality of the original.",
@@ -42,28 +49,12 @@ const Work = () => {
 			img: instaCartGIF,
 		},
 		{
-			name: "Breath of the wild Website",
-			summary: "A compendium showcasing materials,creatures and treasures in The Breath of the Wild video game.",
-			techUsed: ["React", "TypeScript", "Tailwind"],
-			githubLink: "https://github.com/joao-miguel8/breath-of-the-wild-companion-app",
-			liveDemoLink: "https://breath-of-the-wild-companion-app.pages.dev/",
-			img: LegendOfZeldaGIF,
-		},
-		{
 			name: "Discord Landing Page",
 			summary: "A no framework landing page showcasing frontend skills like animated transitions and responsive design principles.",
 			techUsed: ["HTML", "Javascript", "CSS"],
 			githubLink: "https://github.com/joao-miguel8/discord-landing-page",
 			liveDemoLink: "https://main--fancy-pithivier-ee4b22.netlify.app/",
 			img: discordGIF,
-		},
-		{
-			name: "Portfolio website",
-			summary: "My portfolio website showcasing my current skills and my collection of portfolio projects I have worked on.",
-			techUsed: ["React", "Tailwind"],
-			githubLink: "https://github.com/joao-miguel8/portfolio-website",
-			liveDemoLink: "",
-			img: "",
 		},
 	];
 
