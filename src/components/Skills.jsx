@@ -54,7 +54,7 @@ const Skills = () => {
 				<div className="mx-4">
 					<NavBar />
 					<div className="mt-20">
-						<p className="text-center text-20 font-bold text-black dark:text-white font-regular montserrat">A collection of skills I have worked with.</p>
+						<p className="text-center text-20 font-bold text-black dark:text-white font-regular montserrat">A collection of technologies I have worked with.</p>
 						<motion.ul variants={variants} initial="hidden" animate="show" className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
 							{skills.map((skill, i) => {
 								return (
