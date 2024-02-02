@@ -16,8 +16,8 @@ const Contact = () => {
 				<Header />
 				<div className="mx-4">
 					<NavBar />
-					<motion.div animate={{ x: 80, y: 0 }} className="mt-6 relative -left-20">
-						<h3 className="text-center text-32 dark:text-[#1fb3ed]">Want to work with me?</h3>
+					<motion.div animate={{ x: 80, y: 0 }} className="mt-10 relative -left-20">
+						<h3 className="text-center text-32 dark:text-white">Want to work with me?</h3>
 						<form className="flex flex-col gap-4" action="https://api.web3forms.com/submit" method="POST">
 							{/* connect form to web3forms endpoint with public api key */}
 							<input type="hidden" name="apikey" value="15e1c0c6-fe6c-4ab2-a32d-ed52e7a3a762"></input>
