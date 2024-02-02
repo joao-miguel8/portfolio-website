@@ -95,14 +95,16 @@ const Work = () => {
 											{/* view live demo / view code button */}
 											<div className="mt-8 flex justify-center gap-4 flex-wrap">
 												{/* view live demo button */}
-												<a
-													href={project.liveDemoLink}
-													target="_blank"
-													className={`font-bold text-[14px] text-[#fff] bg-[#43baea] px-[22px] py-[6px] border-[solid] border-[#43baea] border-[2px] [box-shadow:rgb(0,_0,_0)_0px_0px_0px_0px] rounded-[50px] [transition:621ms] translate-y-[0] flex flex-row items-center cursor-pointer hover:[transition:800ms] hover:-translate-y-0 hover:bg-[#fff] hover:text-[#43baea] hover:border-[solid] hover:border-[2px] hover:border-[#43baea] montserrat ${
-														project.name === "Portfolio" && "hidden"
-													}`}>
-													View live demo
-												</a>
+												{project.liveDemoLink.length !== 0 && (
+													<a
+														href={project.liveDemoLink}
+														target="_blank"
+														className={`font-bold text-[14px] text-[#fff] bg-[#43baea] px-[22px] py-[6px] border-[solid] border-[#43baea] border-[2px] [box-shadow:rgb(0,_0,_0)_0px_0px_0px_0px] rounded-[50px] [transition:621ms] translate-y-[0] flex flex-row items-center cursor-pointer hover:[transition:800ms] hover:-translate-y-0 hover:bg-[#fff] hover:text-[#43baea] hover:border-[solid] hover:border-[2px] hover:border-[#43baea] montserrat ${
+															project.name === "Portfolio" && "hidden"
+														}`}>
+														View live demo
+													</a>
+												)}
 												{/* view code button */}
 												<a
 													href={project.githubLink}
