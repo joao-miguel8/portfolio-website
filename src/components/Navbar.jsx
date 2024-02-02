@@ -16,18 +16,18 @@ const NavBar = () => {
 	];
 
 	return (
-		<nav className="my-4 flex flex-wrap gap-3">
-			{navLinks.map(navLink => {
-				return (
-					<ul>
+		<nav className="my-4 flex justify-center flex-wrap gap-3">
+			<ul className="flex gap-6">
+				{navLinks.map(navLink => {
+					return (
 						<Link to={navLink.to}>
-							<li className={classNames(themeMode.isDarkTheme ? "text-white" : "dark:text-[#1c7da3]", "text-18 font-bold robotoMono", location.pathname === navLink.to && "text-[#1c7da3] dark:text-[#1cafe9]")} key={navLink.to}>
+							<li className={classNames(themeMode.isDarkTheme ? "text-white" : "dark:text-[#1c7da3]", "text-18 font-bold robotoMono", location.pathname === navLink.to && "text-[#1c7da3] dark:text-[#1cafe9] border-b-2 border-b-[#1cafe9]")} key={navLink.to}>
 								{navLink.name}
 							</li>
 						</Link>
-					</ul>
-				);
-			})}
+					);
+				})}
+			</ul>
 		</nav>
 	);
 };
