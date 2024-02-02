@@ -1,13 +1,13 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 import Header from "./Header";
 import BGPattern from "./BGPattern";
-import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css/navigation";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-
 import discordGIF from "../assets/giphy-discord-landing-page.gif";
 import wellingtonLimousineGIF from "../assets/wellington-limousine-gif.gif";
 import LegendOfZeldaGIF from "../assets/loz-breath-of-the-wild-gif.gif";
@@ -77,19 +77,21 @@ const Work = () => {
 					<motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
 						<Swiper
 							className="w-full mt-10 h-full"
-							modules={[Pagination, Autoplay]}
+							modules={[Pagination, Autoplay, Navigation]}
+							navigation
 							pagination={{
 								clickable: true,
+								type: "progressbar",
 							}}
 							spaceBetween={50}>
 							<div>
 								{projects.map(project => {
 									return (
 										<SwiperSlide>
-											<h1 className="text-34 dark:text-white montserrat">{project.name}</h1>
-											<p className="mt-10 w-full md:w-[40rem] text-20 dark:text-white montserrat">{project.summary}</p>
-											<div className="mt-10 flex items-center flex-wrap gap-2 text-bold dark:text-white">
-												<h4 className="text-16 montserrat ">Skills Used:</h4>
+											<h1 className="mt-20 font-bold text-center text-34 dark:text-white montserrat">{project.name}</h1>
+											<p className="mx-auto mt-10 w-full md:w-[40rem] text-center text-20 dark:text-white montserrat">{project.summary}</p>
+											<div className="mt-10 flex justify-center items-center flex-wrap gap-2 text-bold dark:text-white">
+												<h4 className="font-bold text-16 montserrat ">Skills Used:</h4>
 												{project.techUsed.map((tech, index) => {
 													return (
 														<>
@@ -100,7 +102,7 @@ const Work = () => {
 												})}
 											</div>
 											{/* view live demo / view code button */}
-											<div className="mt-8 flex gap-4 flex-wrap">
+											<div className="mt-8 flex justify-center gap-4 flex-wrap">
 												{/* view live demo button */}
 												<a
 													href={project.liveDemoLink}
@@ -119,7 +121,7 @@ const Work = () => {
 													View Code
 												</a>
 											</div>
-											<img src={project.img} alt={`${project.name} image`} className=" mt-4 w-[400px] h-60" />
+											<img src={project.img} alt={`${project.name} image`} className=" mt-10 w-full h-auto" />
 										</SwiperSlide>
 									);
 								})}
