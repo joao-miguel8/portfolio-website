@@ -8,7 +8,7 @@ const Header = () => {
 
 	return (
 		<>
-			<div className="mx-2 pt-4 flex flex-wrap items-center justify-between">
+			<div className="mx-10 pt-4 flex flex-wrap items-center justify-between">
 				<Link to={"/about"}>
 					<motion.a whileHover={{ scale: 0.9 }} href="#">
 						<h4 className={`text-14 flex items-center gap-1 montserrat font-bold text-[#1A96C6]`}>
