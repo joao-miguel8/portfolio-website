@@ -11,10 +11,10 @@ const Header = () => {
 			<div className="mx-10 pt-4 flex flex-wrap items-center justify-between">
 				<Link to={"/about"}>
 					<motion.a whileHover={{ scale: 0.9 }} href="#">
-						<h4 className={`text-14 flex items-center gap-1 montserrat font-bold text-[#43baea]`}>
-							<span className="text-14 text-[#43baea] dark:text-[#43baea] ">&lt;</span>
-							JoãoMiguel<span className=" text-14 text-[#1A96C6] dark:text-[#1A96C6]"> /&gt; </span>
-						</h4>
+						<span className={`text-16 flex items-center gap-1 montserrat font-bold text-[#43baea]`}>
+							<span className="text-16 text-[#43baea] dark:text-[#43baea] ">&lt;</span>
+							JoãoMiguel<span className=" text-16 text-[#43baea] dark:text-[#43baea]"> /&gt; </span>
+						</span>
 					</motion.a>
 				</Link>
 				<div className="w-20">
