@@ -21,7 +21,7 @@ const About = () => {
 							my skillset with others while collaborating on awesome projects.
 						</p>
 
-						<a download href="src/assets/João-SWE-resume.pdf" className="group mx-auto w-fit flex gap-2 items-end text-end text-18 font-bold robotoSlab dark:text-white">
+						<a download href="public/João-SWE-resume.pdf" className="group mx-auto w-fit flex gap-2 items-end text-end text-18 font-bold robotoSlab dark:text-white">
 							<div className="flex gap-2 items-end">
 								<span className="group-hover:text-[#1A99C6] duration-300">DOWNLOAD CV</span>
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-[#1A96C6] ">
