@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 import Header from "./Header";
-import BGPattern from "./BGPattern";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
@@ -60,7 +60,6 @@ const Work = () => {
 
 	return (
 		<>
-			<BGPattern />
 			<section className="mb-4 pt-10 mx-auto px-4 w-full lg:w-[60rem] h-full">
 				<Header />
 				<div>

@@ -1,12 +1,10 @@
 import { motion } from "framer-motion";
 import NavBar from "./Navbar";
 import Header from "./Header";
-import BGPattern from "./BGPattern";
 
 const About = () => {
 	return (
 		<>
-			<BGPattern />
 			<section className="mb-4 pt-10 mx-auto w-full lg:w-[60rem] h-full">
 				<Header />
 				<div className="mx-4 mb-12">
