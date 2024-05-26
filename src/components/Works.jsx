@@ -61,9 +61,7 @@ const Work = () => {
 	return (
 		<>
 			<section className="mb-4 pt-10 mx-auto px-4 w-full lg:w-[60rem] h-full">
-				<Header />
 				<div>
-					<Navbar />
 					<motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
 						<Swiper
 							className="w-full mt-10 h-full"

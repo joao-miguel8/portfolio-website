@@ -2,21 +2,13 @@ import { useContext } from "react";
 import { ThemeContext } from "../context/AppThemeContext";
 import { motion } from "framer-motion";
 import classNames from "classnames";
-import { Link } from "react-router-dom";
+
 const Header = () => {
 	const themeMode = useContext(ThemeContext);
 
 	return (
 		<>
 			<div className="mx-10 pt-4 flex flex-wrap items-center justify-between">
-				<Link to={"/about"}>
-					<motion.a whileHover={{ scale: 0.9 }} href="#">
-						<span className={`text-16 flex items-center gap-1 montserrat font-bold text-[#43baea]`}>
-							<span className="text-16 text-[#43baea] dark:text-[#43baea] ">&lt;</span>
-							JoãoMiguel<span className=" text-16 text-[#43baea] dark:text-[#43baea]"> /&gt; </span>
-						</span>
-					</motion.a>
-				</Link>
 				<div className="w-20">
 					<button onClick={themeMode.toggleTheme} className={classNames("w-full flex items-center ", themeMode.isDarkTheme === false ? "text-[#1A95c6]" : "text-[#f4e84a]")}>
 						{/* Sun icon */}

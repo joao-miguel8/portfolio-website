@@ -6,9 +6,7 @@ const About = () => {
 	return (
 		<>
 			<section className="mb-4 pt-10 mx-auto w-full lg:w-[60rem] h-full">
-				<Header />
 				<div className="mx-4 mb-12">
-					<NavBar />
 					<motion.div animate={{ x: 80 }} transition={{ type: "spring", stiffness: 100 }} id="about" className="mt-10 relative -left-20 flex flex-col gap-4">
 						<h2 className="text-center text-40 dark:text-white monoSlab">👋 Hey, I'm João Miguel</h2>
 						<p className="mx-auto mt-10 max-w-[700px] text-20 text-center dark:text-white leading-7 font-regular montserrat ">

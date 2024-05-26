@@ -12,9 +12,7 @@ const Contact = () => {
 	return (
 		<>
 			<section className="mb-4 pt-10 mx-auto w-full lg:w-[60rem] h-full">
-				<Header />
 				<div className="mx-4">
-					<NavBar />
 					<motion.div animate={{ x: 80, y: 0 }} className="mt-10 relative -left-20">
 						<h3 className="text-center text-32 dark:text-white">Want to work with me?</h3>
 						<form className="flex flex-col gap-4" action="https://api.web3forms.com/submit" method="POST">
