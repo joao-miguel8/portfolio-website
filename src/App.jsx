@@ -1,6 +1,6 @@
 import "./App.css";
 import NavBar from "./components/Navbar";
-import About from "./components/About";
+import About from "./components/Hero.jsx";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Work from "./components/Works.jsx";
