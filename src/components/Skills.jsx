@@ -4,8 +4,6 @@ import { SiTailwindcss, SiTypescript, SiJavascript } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 
 import { motion } from "framer-motion";
-import NavBar from "./Navbar";
-import Header from "./Header";
 
 const size = "26px";
 const Skills = () => {

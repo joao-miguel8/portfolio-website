@@ -2,7 +2,6 @@ import classNames from "classnames";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import NavBar from "./Navbar";
-import Header from "./Header";
 
 const Contact = () => {
 	const [nameInput, setNameInput] = useState("");

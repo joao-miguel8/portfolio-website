@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
-import Header from "./Header";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
