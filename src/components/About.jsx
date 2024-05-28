@@ -1,7 +1,7 @@
 const About = () => {
 	return (
 		<>
-			<section className="mx-14 mt-40 lg:w-[60rem] h-full">
+			<section id="about" className="mx-14 pt-40 mt-20 lg:w-[60rem] min-h-[200px]">
 				<h2 className="text-34 uppercase font-semibold">A little about me.</h2>
 				<p className="mt-4 text-18 leading-8">
 					My journey began in the world of software development, initially fueled by a passion for game development. As I went deeper, I found myself learning web/software development as a hobby and gaining some freelance experience. It wasn't long before I discovered the dynamic field of

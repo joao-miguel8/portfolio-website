@@ -7,19 +7,17 @@ const NavBar = () => {
 	const themeMode = useContext(ThemeContext);
 
 	const navLinks = [
-		{ to: "/about", name: "About" },
-		{ to: "/skills", name: "Skills" },
-		{ to: "/works", name: "Works" },
-		{ to: "/contact", name: "Contact" },
+		{ link: "#about", name: "About Me" },
+		{ link: "#contact", name: "Contact" },
 	];
 
 	return (
-		<nav className="my-4 flex justify-center flex-wrap gap-3">
+		<nav className="mt-8 mb-20 p-4 sticky top-0 z-50 flex justify-center flex-wrap gap-4 bg-white">
 			<ul className="flex gap-6">
 				{navLinks.map(navLink => {
 					return (
-						<a to={navLink.to}>
-							<li className={classNames(themeMode.isDarkTheme ? "text-white" : "dark:text-[#1c7da3]", "text-18 font-bold robotoMono", "" === navLink.to && "text-[#1c7da3] dark:text-[#1cafe9] border-b-2 border-b-[#1cafe9]")} key={navLink.to}>
+						<a key={navLink.to} href={navLink.link} className="cursor-pointer">
+							<li className={classNames(themeMode.isDarkTheme ? "text-[#333]" : "dark:text-[#333]", "font-bold text-18 robotoMono hover:text-green-500")} key={navLink.to}>
 								{navLink.name}
 							</li>
 						</a>

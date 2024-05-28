@@ -9,7 +9,7 @@ const Contact = ({ getInTouchRef }) => {
 
 	return (
 		<>
-			<section className="mt-60 mb-4 mx-auto w-full lg:w-[60rem] h-full">
+			<section id="contact" className="mt-60 mb-4 mx-auto w-full lg:w-[60rem] h-full">
 				<div className="mx-8">
 					<motion.div animate={{ x: 80, y: 0 }} className="mt-10 relative -left-20">
 						<div className="p-8 [box-shadow:rgba(60,_64,_67,_0.3)_0px_1px_2px_0px,_rgba(60,_64,_67,_0.15)_0px_1px_3px_1px] rounded-md">

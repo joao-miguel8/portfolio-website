@@ -8,3 +8,7 @@
 	--swiper-pagination-bullet-height: 14px;
 	--swiper-pagination-bullet-horizontal-gap: 4px;
 }
+
+html {
+	scroll-behavior: smooth;
+}
