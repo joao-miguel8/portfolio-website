@@ -1,7 +1,7 @@
 import "./App.css";
 import NavBar from "./components/Navbar";
-import About from "./components/Hero.jsx";
-import Skills from "./components/Skills";
+import Hero from "./components/Hero.jsx";
+import About from "./components/About.jsx";
 import Contact from "./components/Contact";
 import Work from "./components/Works.jsx";
 
@@ -9,10 +9,10 @@ function App() {
 	return (
 		<>
 			<NavBar />
+			<Hero />
 			<About />
-			<Work />
-			<Skills />
-			<Contact />
+			{/* <Work /> */}
+			{/* <Contact /> */}
 		</>
 	);
 }
