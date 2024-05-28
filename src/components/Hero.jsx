@@ -28,7 +28,7 @@ const Hero = ({ scrollToForm }) => {
 							</a>
 						</div>
 						<div className="mt-8 flex flex-col lg:flex-row gap-6 justify-center items-center">
-							<img src="src/assets/JoaoHeadshot.jpg" alt="image of joão" className="inline-block bg-red-400 w-60 rounded-md" />
+							<img src="dist/assets/JoaoHeadshot.jpg" alt="image of joão" className="inline-block bg-red-400 w-60 rounded-md" />
 							<div className=" text-center lg:text-left">
 								<h2 className="w-[22rem] text-32 font-medium monoSlab">Hey I am João, your next Digital Marketer. </h2>
 								<button onClick={scrollToForm} className="mt-4 p-4 font-semibold bg-[#333] hover:bg-[#222] duration-200 text-white rounded-sm">
