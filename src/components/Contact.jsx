@@ -1,9 +1,8 @@
 import classNames from "classnames";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import NavBar from "./Navbar";
 
-const Contact = () => {
+const Contact = ({ getInTouchRef }) => {
 	const [nameInput, setNameInput] = useState("");
 	const [emailInput, setEmailInput] = useState("");
 	const [descriptionInput, setDescriptionInput] = useState("");
@@ -15,7 +14,7 @@ const Contact = () => {
 					<motion.div animate={{ x: 80, y: 0 }} className="mt-10 relative -left-20">
 						<div className="p-8 [box-shadow:rgba(60,_64,_67,_0.3)_0px_1px_2px_0px,_rgba(60,_64,_67,_0.15)_0px_1px_3px_1px] rounded-md">
 							<h2 className="text-center text-32 uppercase font-semibold dark:text-#333">Send me an Email?</h2>
-							<form className="mt-8 flex flex-col gap-4" action="https://api.web3forms.com/submit" method="POST">
+							<form ref={getInTouchRef} className="mt-8 flex flex-col gap-4" action="https://api.web3forms.com/submit" method="POST">
 								{/* connect form to web3forms endpoint with public api key */}
 								<input type="hidden" name="apikey" value="15e1c0c6-fe6c-4ab2-a32d-ed52e7a3a762"></input>
 								{/* Name input */}
