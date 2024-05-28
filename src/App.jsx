@@ -3,7 +3,6 @@ import NavBar from "./components/Navbar";
 import Hero from "./components/Hero.jsx";
 import About from "./components/About.jsx";
 import Contact from "./components/Contact";
-import Work from "./components/Works.jsx";
 
 function App() {
 	return (
@@ -12,7 +11,6 @@ function App() {
 			<Hero />
 			<About />
 			<Contact />
-			{/* <Work /> */}
 		</>
 	);
 }
