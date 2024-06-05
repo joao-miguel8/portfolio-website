@@ -6,7 +6,7 @@ const Hero = ({ scrollToForm }) => {
 					<div className="mx-auto">
 						<div className="flex gap-4 items-center justify-center">
 							{/* Linkedin */}
-							<a target="_blank" href="https://www.linkedin.com/in/jo%C3%A3omiguelc/">
+							<a className="transition duration-300 ease-in-out hover:-translate-y-2" target="_blank" href="https://www.linkedin.com/in/jo%C3%A3omiguelc/">
 								<svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="7.025 7.025 497.951 497.95" id="linkedin">
 									<linearGradient id="a" x1="-974.482" x2="-622.378" y1="1306.773" y2="1658.877" gradientTransform="translate(1054.43 -1226.825)" gradientUnits="userSpaceOnUse">
 										<stop offset="0" stop-color="#2489be"></stop>
@@ -18,11 +18,7 @@ const Hero = ({ scrollToForm }) => {
 								</svg>
 							</a>
 							{/* Resume */}
-							<a
-								target="_blank"
-								href=""
-								className="p-1 flex flex-col items-center shadow-md rounded-lg [box-shadow:rgba(9,_30,_66,_0.25)_0px_4px_8px_-2px,_rgba(9,_30,_66,_0.08)_0px_0px_0px_1px]
-">
+							<a target="_blank" href="" className="p-1 flex flex-col items-center shadow-md rounded-lg [box-shadow:rgba(9,_30,_66,_0.25)_0px_4px_8px_-2px,_rgba(9,_30,_66,_0.08)_0px_0px_0px_1px] transition duration-300 ease-in-out hover:-translate-y-2">
 								<img src="src/assets/icons/cloud-download-alt_7435099.svg" alt="" className="w-6" />
 								<span className="text-12 font-semibold uppercase">Resume</span>
 							</a>
