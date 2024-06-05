@@ -19,12 +19,12 @@ const Hero = ({ scrollToForm }) => {
 							</a>
 							{/* Resume */}
 							<a target="_blank" href="" className="p-1 flex flex-col items-center shadow-md rounded-lg [box-shadow:rgba(9,_30,_66,_0.25)_0px_4px_8px_-2px,_rgba(9,_30,_66,_0.08)_0px_0px_0px_1px] transition duration-300 ease-in-out hover:-translate-y-2">
-								<img src="src/assets/icons/cloud-download-alt_7435099.svg" alt="" className="w-6" />
+								<img src="public/cloud-download-alt_7435099.svg" alt="" className="w-6" />
 								<span className="text-12 font-semibold uppercase">Resume</span>
 							</a>
 						</div>
 						<div className="mt-8 flex flex-col lg:flex-row gap-6 justify-center items-center">
-							<img src="./assets/JoaoHeadshot.jpg" alt="image of joão" className="inline-block bg-red-400 w-60 rounded-md" />
+							<img src="public/JoaoHeadshot.jpg" alt="image of joão" className="inline-block bg-red-400 w-60 rounded-md" />
 							<div className=" text-center lg:text-left">
 								<h2 className="w-[22rem] text-32 font-medium monoSlab">Hey I am João, your next Digital Marketer. </h2>
 								<button onClick={scrollToForm} className="mt-4 p-4 font-semibold bg-[#333] hover:bg-[#222] duration-200 text-white rounded-sm">
