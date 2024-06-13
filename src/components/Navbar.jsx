@@ -12,7 +12,7 @@ const NavBar = () => {
 	];
 
 	return (
-		<nav className="mt-8 mb-20 p-4 sticky top-0 z-50 flex justify-center flex-wrap gap-4 bg-white">
+		<nav className="mt-8 mb-20 p-4 sticky top-0 z-50 flex justify-center flex-wrap gap-4 bg-white border-b-2 border-b-gray-100">
 			<ul className="flex gap-6">
 				{navLinks.map(navLink => {
 					return (
