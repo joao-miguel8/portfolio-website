@@ -1,9 +1,9 @@
 import "./App.css";
 import NavBar from "./components/Navbar";
-import Hero from "./components/Hero.jsx";
 import About from "./components/About.jsx";
 import Contact from "./components/Contact";
 import { createRef } from "react";
+import Hero from "./components/hero.jsx";
 
 function App() {
 	const inputRef = createRef();
