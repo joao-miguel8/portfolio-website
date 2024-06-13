@@ -1,4 +1,4 @@
-import ProfileIMG from "./assets/joaoHeadshot.jpg"; // Adjust this path if needed
+import ProfileIMG from "/joaoHeadshot.jpg";
 
 const HeroSection = ({ scrollToForm }) => {
 	return (
