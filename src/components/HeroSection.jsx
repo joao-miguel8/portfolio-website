@@ -1,6 +1,6 @@
 import ProfileIMG from "../assets/joaoHeadshot.jpg"; // Adjust this path if needed
 
-const Hero = ({ scrollToForm }) => {
+const HeroSection = ({ scrollToForm }) => {
 	return (
 		<>
 			<section className="mx-4">
@@ -44,4 +44,4 @@ const Hero = ({ scrollToForm }) => {
 	);
 };
 
-export default Hero;
+export default HeroSection;

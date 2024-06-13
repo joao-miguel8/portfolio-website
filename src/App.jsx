@@ -3,7 +3,7 @@ import NavBar from "./components/Navbar";
 import About from "./components/About.jsx";
 import Contact from "./components/Contact";
 import { createRef } from "react";
-import Hero from "./components/hero.jsx";
+import HeroSection from "./components/HeroSection.jsx";
 
 function App() {
 	const inputRef = createRef();
@@ -14,7 +14,7 @@ function App() {
 	return (
 		<>
 			<NavBar />
-			<Hero scrollToForm={scrollToForm} />
+			<HeroSection scrollToForm={scrollToForm} />
 			<About />
 			<Contact getInTouchRef={inputRef} />
 		</>
