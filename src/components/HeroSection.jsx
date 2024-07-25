@@ -9,9 +9,11 @@ const HeroSection = ({ scrollToForm }) => {
 						<div className="mt-8 flex flex-col items-center">
 							<img src={ProfileIMG} alt="image of joão" className="inline-block bg-white w-60 rounded-full" />
 							<div className="mt-12">
-								<h2 className="text-32 font-bold monoSlab text-center"> Creative and Strategic Marketing Support for Your Business.</h2>
+								<h2 className="text-32 font-bold monoSlab text-center"> An Aspiring Marketing Manager & Marketing Enthusiast </h2>
 								<p className="mt-6 mx-20 text-24 text-center font-bold monoSlab">
-									<span className="text-green-400">Driving growth</span>, <span className="text-green-400">boosting visibility</span>, and <span className="text-green-400"> maximizing ROI</span> through strategies and marketing techniques.
+									Marketing strategies
+									<span className="p-2 ml-2 text-[#3078c0] bg-[#cddff1]">driving growth,</span>
+									<span className="text-[#3078c0] ml-2 p-2 bg-[#cddff1]">boosting visibility,</span> and <span className="text-[#3078c0] p-2 bg-[#cddff1]"> maximizing ROI</span> through with Creative & Strategic Marketing for Your Business.
 								</p>
 							</div>
 							<div className="mt-10 flex gap-4 items-center text-center lg:text-left">
