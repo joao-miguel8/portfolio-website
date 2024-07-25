@@ -19,9 +19,7 @@ const NavBar = () => {
 					{navLinks.map(navLink => {
 						return (
 							<a key={navLink.to} href={navLink.link} className="cursor-pointer">
-								<li className={classNames(themeMode.isDarkTheme ? "text-[#333]" : "dark:text-[#333]", "font-bold text-18 robotoMono hover:text-green-500")} key={navLink.to}>
-									{navLink.name}
-								</li>
+								<li className={classNames(themeMode.isDarkTheme ? "text-[#333]" : "dark:text-[#333]", "font-bold text-18 robotoMono hover:text-[#3078c0]")}>{navLink.name}</li>
 							</a>
 						);
 					})}
