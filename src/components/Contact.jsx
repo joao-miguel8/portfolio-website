@@ -13,7 +13,7 @@ const Contact = ({ getInTouchRef }) => {
 				<div className="mx-8">
 					<motion.div animate={{ x: 80, y: 0 }} className="mt-10 relative -left-20">
 						<div className="p-8 [box-shadow:rgba(60,_64,_67,_0.3)_0px_1px_2px_0px,_rgba(60,_64,_67,_0.15)_0px_1px_3px_1px] rounded-md">
-							<h2 className=" text-24 uppercase monoSlab font-semibold dark:text-#333">Lets Have a Chat</h2>
+							<h2 className="text-24 uppercase monoSlab font-semibold dark:text-#333">Lets Have a Chat</h2>
 							<p className="mt-4 montserrat">Let me show you how an incredible marketing strategy can drive boost your brands awareness, increase your potential traffic and revenue.</p>
 							<form ref={getInTouchRef} className="mt-8 flex flex-col gap-4" action="https://api.web3forms.com/submit" method="POST">
 								{/* connect form to web3forms endpoint with public api key */}
@@ -26,7 +26,7 @@ const Contact = ({ getInTouchRef }) => {
 										type="text"
 										name="name"
 										onChange={e => setNameInput(e.target.value)}
-										className={classNames("pb-1 bg-transparent border-b-[1px] border-black dark:border-text-#333 focus:outline-none focus:border-green-500 focus:text-#333 dark:focus:border-green-500 transition ease-in-out duration-300")}
+										className={classNames("pb-1 bg-transparent border-b-[1px] border-black dark:border-text-#333 focus:outline-none focus:border-[#3078c0] focus:text-#333 dark:focus:border-[#3078c0] transition ease-in-out duration-300")}
 									/>
 								</label>
 								{/* Email Input */}
@@ -37,7 +37,7 @@ const Contact = ({ getInTouchRef }) => {
 										onChange={e => setEmailInput(e.target.value)}
 										type="email"
 										name="email"
-										className="pb-1 bg-transparent border-b-[1px] border-black dark:border-#333 focus:outline-none focus:border-#333 focus:text-#333 dark:focus:border-green-500 transition ease-in-out duration-300"
+										className="pb-1 bg-transparent border-b-[1px] border-black dark:border-#333 focus:outline-none focus:border-#333 focus:text-#333 dark:focus:border-[#3078c0] transition ease-in-out duration-300"
 									/>
 								</label>
 								{/* description textArea */}
@@ -49,7 +49,7 @@ const Contact = ({ getInTouchRef }) => {
 									rows={5}
 									type="text"
 									name="description"
-									className="mt-1 p-1 rounded-md resize-none bg-transparent border-[1px] border-black dark:border-#333 focus:outline-none focus:border-#333 focus:text-#333 dark:focus:border-green-500 transition ease-in-out duration-300"
+									className="mt-1 p-1 rounded-md resize-none bg-transparent border-[1px] border-black dark:border-#333 focus:outline-none focus:border-#333 focus:text-#333 dark:focus:border-[#3078c0] transition ease-in-out duration-300"
 								/>
 								<div className="flex flex-col md:flex-row md:items-between items-center justify-between">
 									<input type="hidden" name="redirect" value="https://web3forms.com/success" />
