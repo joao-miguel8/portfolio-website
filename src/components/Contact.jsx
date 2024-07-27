@@ -14,7 +14,7 @@ const Contact = ({ getInTouchRef }) => {
 					<motion.div animate={{ x: 80, y: 0 }} className="mt-10 relative -left-20">
 						<div className="p-8 [box-shadow:rgba(60,_64,_67,_0.3)_0px_1px_2px_0px,_rgba(60,_64,_67,_0.15)_0px_1px_3px_1px] rounded-md">
 							<h2 className="text-24 uppercase monoSlab font-semibold dark:text-#333">Lets Have a Chat</h2>
-							<p className="mt-4 montserrat">Let me show you how an incredible marketing strategy can drive boost your brands awareness, increase your potential traffic and revenue.</p>
+							<p className="mt-4 montserrat">Let me show you how an incredible marketing strategy can boost your brands awareness, increase your potential traffic and revenue.</p>
 							<form ref={getInTouchRef} className="mt-8 flex flex-col gap-4" action="https://api.web3forms.com/submit" method="POST">
 								{/* connect form to web3forms endpoint with public api key */}
 								<input type="hidden" name="apikey" value="15e1c0c6-fe6c-4ab2-a32d-ed52e7a3a762"></input>
