@@ -9,7 +9,7 @@ const NavBar = ({ setIsPortfolioModalClosed }) => {
 	const navLinks = [
 		{ link: "#about", name: "About Me", onClick: null },
 		{ link: "#contact", name: "Contact", onClick: null },
-		{ link: "#portfolio", name: "Portfolio", onClick: () => setIsPortfolioModalClosed(true) },
+		{ link: "#pdfGuide", name: "$999 marketing plan", onClick: () => setIsPortfolioModalClosed(true) },
 	];
 
 	return (
@@ -20,7 +20,14 @@ const NavBar = ({ setIsPortfolioModalClosed }) => {
 					{navLinks.map(navLink => {
 						return (
 							<a onClick={navLink.onClick} key={navLink.to} href={navLink.link} className="cursor-pointer">
-								<li className={classNames(themeMode.isDarkTheme ? "text-[#333]" : "dark:text-[#333]", "font-bold text-18 robotoMono hover:text-[#3078c0]")}>{navLink.name}</li>
+								{navLink.name !== "$999 marketing plan" ? (
+									<li className={classNames("font-bold text-18 robotoMono hover:text-[#3078c0]")}>{navLink.name}</li>
+								) : (
+									<li className="font-bold text-18 robotoMono hover:text-[#3078c0]">
+										<span className="line-through mr-2">{navLink.name.split(" ")[0]} </span>
+										{navLink.name.slice(5)}
+									</li>
+								)}
 							</a>
 						);
 					})}
