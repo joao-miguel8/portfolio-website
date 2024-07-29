@@ -9,11 +9,11 @@ const NavBar = ({ setIsPortfolioModalClosed }) => {
 	const navLinks = [
 		{ link: "#about", name: "About Me", onClick: null },
 		{ link: "#contact", name: "Contact", onClick: null },
-		{ link: "#pdfGuide", name: "$999 marketing plan", onClick: () => setIsPortfolioModalClosed(true) },
+		{ link: "#pdfGuide", name: "$999 Marketing Plan", onClick: () => setIsPortfolioModalClosed(true) },
 	];
 
 	return (
-		<header className="sticky top-0 z-40 px-2 mb-20 py-4 flex items-center border-b-2 border-b-gray-100 bg-white ">
+		<header className="sticky top-0 z-40 px-2  py-4 flex items-center border-b-2 border-b-gray-100 bg-white ">
 			<img src="src/assets/favicon.png" alt="" className="w-10" />
 			<nav className="mx-auto p-4 flex justify-center flex-wrap gap-4">
 				<ul className="flex gap-6">
