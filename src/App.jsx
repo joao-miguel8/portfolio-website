@@ -5,7 +5,7 @@ import About from "./components/About.jsx";
 import Contact from "./components/Contact";
 import { createRef } from "react";
 import HeroSection from "./components/HeroSection.jsx";
-import PortfolioModal from "./components/PortfolioModal.jsx";
+import PdfGuideModal from "./components/PdfGuideModal.jsx";
 
 function App() {
 	const inputRef = createRef();
@@ -19,7 +19,7 @@ function App() {
 			<HeroSection scrollToForm={scrollToForm} />
 			<About />
 			<Contact getInTouchRef={inputRef} />
-			<PortfolioModal isPortfolioModalClosed={isPortfolioModalClosed} setIsPortfolioModalClosed={setIsPortfolioModalClosed} />
+			<PdfGuideModal isPortfolioModalClosed={isPortfolioModalClosed} setIsPortfolioModalClosed={setIsPortfolioModalClosed} />
 		</>
 	);
 }
