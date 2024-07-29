@@ -19,9 +19,9 @@ const NavBar = ({ setIsPortfolioModalClosed }) => {
 				<ul className="flex gap-6">
 					{navLinks.map(navLink => {
 						return (
-							<button onClick={navLink.onClick} key={navLink.to} href={navLink.link} className="cursor-pointer">
+							<a onClick={navLink.onClick} key={navLink.to} href={navLink.link} className="cursor-pointer">
 								<li className={classNames(themeMode.isDarkTheme ? "text-[#333]" : "dark:text-[#333]", "font-bold text-18 robotoMono hover:text-[#3078c0]")}>{navLink.name}</li>
-							</button>
+							</a>
 						);
 					})}
 				</ul>
