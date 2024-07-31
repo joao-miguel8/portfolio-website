@@ -7,7 +7,8 @@ const NavBar = () => {
 	const navLinks = [
 		{ link: "/home", scrollLink: "#about", name: "About Me", onClick: null },
 		{ link: "/home", scrollLink: "#contact", name: "Contact", onClick: null },
-		{ link: "/999marketingPlan", scrollLink: null, name: "$999 Marketing Plan" },
+		{ link: "/marketingPlan", scrollLink: null, name: "$999 Marketing Plan" },
+		{ link: "/work", scrollLink: null, name: "Work" },
 	];
 
 	return (
