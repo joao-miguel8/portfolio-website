@@ -26,10 +26,7 @@ const MarketingPlan = () => {
 	return (
 		<div className={classNames(`bg-white duration-500`)}>
 			<NavBar />
-			<title>Marketing Plan</title>
 			<div ref={scriptContainerRef}></div>
-
-			<p>Test</p>
 		</div>
 	);
 };
