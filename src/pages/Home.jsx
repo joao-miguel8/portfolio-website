@@ -15,10 +15,10 @@ function Home() {
 		<>
 			{!isMarketingPlanPage && (
 				<>
+					<NavBar />
 					<HeroSection />
 					<About />
 					<Contact />
-					<NavBar />
 				</>
 			)}
 		</>
