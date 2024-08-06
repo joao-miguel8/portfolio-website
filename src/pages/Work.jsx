@@ -14,7 +14,7 @@ function Work() {
 				{/* Introduction */}
 				<div>
 					<h5 className="text-18 mt-14 monoSlab font-semibold">Introduction:</h5>
-					<p className="monsterrat">
+					<p className="montserrat">
 						<a className="mx-2 underline text-blue-700" href="https://wellingtonlimousine.net/">
 							Wellington Limousine
 						</a>
@@ -118,12 +118,12 @@ function Work() {
 							<p className="montserrat">$120</p>
 						</div>
 					</div>
-					<img className="mx-auto mt-6 rounded-md w-3/4" src="../public/ga-campaign-wellington-limo-overview.png" alt="image google ads campaign data" />
+					<img className="mx-auto mt-6 rounded-md w-full max-w-[800px]" src="../public/ga-campaign-wellington-limo-overview.png" alt="image google ads campaign data" />
 				</div>
 				{/* SEO AUDIT */}
 				<div className="my-20">
 					<h3 className="text-center text-20 monoSlab font-semibold">SEO Audit For Wellington Limousine</h3>
-					<iframe className="mt-8 mx-auto border-2 w-3/4 md:w-[600px] min-w-[400px] h-[600px] rounded-md" src="public/Wellington Limousine SEO Audit_.pdf" frameBorder="0" title="PDF Viewer"></iframe>
+					<iframe className=" mt-8 mx-auto border-2 w-3/4 md:w-[600px] min-w-[400px] h-[600px] rounded-md" src="public/Wellington Limousine SEO Audit_.pdf" frameBorder="0" title="seo-audit-wellingtonlimousine-pdf"></iframe>
 				</div>
 			</section>
 
