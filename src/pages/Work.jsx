@@ -1,5 +1,8 @@
 import React from "react";
 import NavBar from "../components/Navbar";
+import wellington_limousine_logo from "../assets/wellington-imo-logo.png";
+import wellington_limousine_seo_audit from "../assets/Wellington Limousine SEO Audit_.pdf";
+import gopro_case_study from "../assets/Paid_Ads_Strategy_for_the_release_of_GoPro_HERO_12_black_edition.pdf";
 
 function Work() {
 	return (
@@ -9,7 +12,7 @@ function Work() {
 			<section className="w-3/4 mt-20 mx-auto">
 				<div>
 					<h3 className="text-center text-26 monoslab font-semibold">Project Brief - Wellington Limousine Case Study</h3>
-					<img className="mt-4 w-28 mx-auto" src="src/assets/wellington-imo-logo.png" alt="wellington limousine logo" />
+					<img className="mt-4 w-28 mx-auto" src={wellington_limousine_logo} alt="wellington limousine logo" />
 				</div>
 				{/* Introduction */}
 				<div>
@@ -69,11 +72,11 @@ function Work() {
 							<h5 className="monoSlab font-semibold">Campaign Name:</h5>
 							<p className="montserrat">Wellington Limousine | SEARCH | EN | US | NY | services</p>
 						</div>
-						<div className="">
+						<div>
 							<h5 className="monoSlab font-semibold">Leads Generated:</h5>
 							<p className="montserrat">9</p>
 						</div>
-						<div className="">
+						<div>
 							<h5 className="monoSlab font-semibold">AOV:</h5>
 							<p className="montserrat">$75 - $300(average $187.50)</p>
 						</div>
@@ -123,7 +126,7 @@ function Work() {
 				{/* SEO AUDIT */}
 				<div className="my-20">
 					<h3 className="text-center text-20 monoSlab font-semibold">SEO Audit For Wellington Limousine</h3>
-					<iframe className=" mt-8 mx-auto border-2 w-3/4 md:w-[600px] min-w-[400px] h-[600px] rounded-md" src="public/Wellington Limousine SEO Audit_.pdf" frameBorder="0" title="seo-audit-wellingtonlimousine-pdf"></iframe>
+					<iframe className=" mt-8 mx-auto border-2 w-3/4 md:w-[600px] min-w-[400px] h-[600px] rounded-md" src={wellington_limousine_seo_audit} frameBorder="0" title="seo-audit-wellingtonlimousine-pdf"></iframe>
 				</div>
 			</section>
 
@@ -164,7 +167,7 @@ function Work() {
 						<p className="montserrat">Aventure travelers, vloggers, sports enthusiasts Budget: $500,000</p>
 					</div>
 				</div>
-				<iframe className="my-20 mx-auto border-2 w-3/4 md:w-[600px] min-w-[400px] h-[600px] rounded-md" src="public/Paid Ads Strategy for the release of GoPro HERO 12 Black Edition copy.pdf" frameBorder="0" title="PDF Viewer"></iframe>
+				<iframe className="my-20 mx-auto border-2 w-3/4 md:w-[600px] min-w-[400px] h-[600px] rounded-md" src={gopro_case_study} frameBorder="0" title="PDF Viewer"></iframe>
 			</section>
 		</>
 	);
