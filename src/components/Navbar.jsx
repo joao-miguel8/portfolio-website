@@ -7,7 +7,7 @@ const NavBar = () => {
 	const navLinks = [
 		{ link: "/", name: "Home", onClick: null },
 		{ link: "/work", name: "Work" },
-		{ link: "/marketingPlan", name: "$999 Marketing Plan" },
+		// { link: "/marketingPlan", name: "$999 Marketing Plan" },
 	];
 
 	const [openNavMenu, setOpenNavMenu] = useState(false);
