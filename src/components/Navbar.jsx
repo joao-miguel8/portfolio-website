@@ -3,6 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import closeIcon from "../assets/close-icon.svg";
 import menuIcon from "../assets/menu-icon.svg";
+import favicon from "../assets/favicon.png";
+
 import "../App.css";
 
 const NavBar = () => {
@@ -43,7 +45,7 @@ const NavBar = () => {
 				</nav>
 			</div>
 			<header className="sticky top-0 z-40 px-2 py-4 flex items-center border-b-2 border-gray-150 bg-white">
-				<img src="src/assets/favicon.png" alt="" className="w-10" />
+				<img src={favicon} alt="" className="w-10" />
 				<button onClick={() => setOpenNavMenu(true)} className="absolute right-4">
 					<img className="w-8" src={menuIcon} alt="open navigation menu" />
 				</button>
