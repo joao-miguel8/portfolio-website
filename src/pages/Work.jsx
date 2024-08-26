@@ -121,7 +121,7 @@ function Work() {
 							<p className="montserrat">$120</p>
 						</div>
 					</div>
-					<img className="mx-auto mt-6 rounded-md w-full max-w-[800px]" src="../public/ga-campaign-wellington-limo-overview.png" alt="image google ads campaign data" />
+					<img className="mx-auto mt-6 rounded-md w-full max-w-[800px]" src="dist/ga-campaign-wellington-limo-overview.png" alt="image google ads campaign data" />
 				</div>
 				{/* SEO AUDIT */}
 				<div className="my-20">
