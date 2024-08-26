@@ -1,7 +1,7 @@
 import React from "react";
 import GoogleLogo from "../assets/Google__G__logo.svg";
-import FacebookLogo from "../assets/facebook_logo.svg";
-import BingLogo from "../assets/Bing_Logo.svg";
+// import FacebookLogo from "../assets/facebook_logo.svg";
+// import BingLogo from "../assets/Bing_Logo.svg";
 import HubSpotLogo from "../assets/HubSpot_Logo.svg";
 
 function Certifications() {
