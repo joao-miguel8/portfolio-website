@@ -30,12 +30,8 @@ const About = () => {
 				<section id="about" className="mx-14 mt-20 min-h-[200px]">
 					<h2 className="text-center text-34 monoSlab font-semibold text-white">👋 Hi, I'm João!</h2>
 					<p className="text-center  mt-4 text-18 leading-8 montserrat text-white">
-						Before diving into digital marketing, I worked within the software development space. I obtained a freelance client and worked with them to build a website from scratch using React, but soon realized that a website alone wouldn't enhance the client's online presence. This led
-						me to explore digital marketing extensively.
-					</p>
-					<p className="text-center mt-4 text-18 leading-8 montserrat text-white">
-						Since then, I have optimized content for SEO, conducted SEO audits, managed Google Ads campaigns, performed keyword research, developed bid strategies, utilized analytics to understand KPIs, optimized landing pages, and conducted competitor analysis. I have also worked within
-						the facebook & bing ads interface and have used EmailOctopus to utilize email marketing and paid social media marketing.
+						With a background in software development and an early passion for game development, I adjusted my focus to digital marketing. Leveraging my web development skills, I have successfully helped a freelance client’s improve lead generation and enhance online presence. I want to
+						continue to transform and improve businesses in the digital landscape through strategic marketing.
 					</p>
 					<Certifications />
 					<div className="mt-20 mx-auto">
