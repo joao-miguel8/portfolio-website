@@ -7,8 +7,8 @@ import HubSpotLogo from "../assets/HubSpot_Logo.svg";
 function Certifications() {
 	const certificationsList = [
 		{ logo: GoogleLogo, text: "Google Certified", size: "w-14" },
-		{ logo: FacebookLogo, text: "Facebook Certified", size: "w-14" },
-		{ logo: BingLogo, text: "Bing Certified", size: "w-16" },
+		// { logo: FacebookLogo, text: "Facebook Certified", size: "w-14" },
+		// { logo: BingLogo, text: "Bing Certified", size: "w-16" },
 		{ logo: HubSpotLogo, text: "Hubspot Certified", size: "w-18" },
 	];
 	return (
