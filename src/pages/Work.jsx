@@ -51,7 +51,7 @@ function Work() {
 						<li>Decrease the cost/conversions</li>
 					</ul>
 				</div>
-				<p className="my-6 text-14 italic">The business owner had no marketing presence digitally or a web presence (no website)</p>
+				<p className="my-6 text-14 italic">The business owner had no marketing presence and web presence (no website)</p>
 				{/* My Role */}
 				<div>
 					<h4 className="text-18 monoSlab font-semibold">My Role:</h4>
@@ -121,7 +121,7 @@ function Work() {
 							<p className="montserrat">$120</p>
 						</div>
 					</div>
-					<img className="mx-auto mt-6 rounded-md w-full max-w-[800px]" src="dist/ga-campaign-wellington-limo-overview.png" alt="image google ads campaign data" />
+					<img className="mx-auto mt-6 rounded-md w-full max-w-[800px]" src="dist/assets/ga-campaign-wellington-limo-overview.png" alt="image google ads campaign data" />
 				</div>
 				{/* SEO AUDIT */}
 				<div className="my-20">
