@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../components/Navbar";
 import wellington_limousine_logo from "../assets/wellington-imo-logo.png";
 import wellington_limousine_seo_audit from "../assets/Wellington Limousine SEO Audit_.pdf";
+import GoogleAdsData from "../assets/ga-campaign-wellington-limo-overview.png";
 import gopro_case_study from "../assets/Paid_Ads_Strategy_for_the_release_of_GoPro_HERO_12_black_edition.pdf";
 
 function Work() {
@@ -121,7 +122,7 @@ function Work() {
 							<p className="montserrat">$120</p>
 						</div>
 					</div>
-					<img className="mx-auto mt-6 rounded-md w-full max-w-[800px]" src="dist/assets/ga-campaign-wellington-limo-overview.png" alt="image google ads campaign data" />
+					<img className="mx-auto mt-6 rounded-md w-full max-w-[800px]" src={GoogleAdsData} alt="image google ads campaign data" />
 				</div>
 				{/* SEO AUDIT */}
 				<div className="my-20">
